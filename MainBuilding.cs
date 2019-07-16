@@ -14,8 +14,6 @@ public class MainBuilding : MonoBehaviour {
 
     public void OnMouseDown() {
         t.text = "Level: " + level.ToString() + "\nCoins: " + coins.ToString() + "\nXP: " + xp.ToString() + "/" + (level * level * 10).ToString();
-        //t.fontSize = 30;
         t.transform.localPosition += new Vector3(-15f, 10f, -5);
-        //print("Level: " + level + "\nCoins: " + coins + "\nXP: " + xp + "/" + (level * level * 10));
     }
 }
