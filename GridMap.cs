@@ -28,10 +28,11 @@ public class GridMap : MonoBehaviour
         {
             for (int y = 0; y < Y; y++)
             {
-                Ground.transform.position = new Vector3(x * xscale,0, y * yscale);
+                Ground.transform.position = new Vector3((x+y) * xscale/1.42f,0,(x-y)*yscale/1.4201f);
                 Map[x, y] = Ground;
                 NewMap[x, y] = Instantiate(Map[x, y]);
                 NewMap[x, y].transform.parent = MapHold.transform;
+ 
             }
         }
     }

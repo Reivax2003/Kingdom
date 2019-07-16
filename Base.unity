@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 759870222}
   - component: {fileID: 759870224}
   - component: {fileID: 759870223}
+  - component: {fileID: 759870225}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -145,14 +146,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759870221}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -100, y: 200, z: 4.7}
+  m_LocalRotation: {x: 0.4597038, y: 0, z: 0, w: 0.8880723}
+  m_LocalPosition: {x: 50, y: 200, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1020662992}
   m_Father: {fileID: 1630947779}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 54.736, y: 0, z: 0}
 --- !u!81 &759870223
 AudioListener:
   m_ObjectHideFlags: 0
@@ -186,7 +187,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 30
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -204,6 +205,24 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &759870225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759870221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13c480d1cda1644bcf3b11aa5000df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camspeed: 40
+  panedge: 10
+  xMax: 100
+  yMax: 100
+  Panlim: {x: 50, y: 50}
+  camerapan: {fileID: 759870221}
 --- !u!1 &1020662991
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630947778}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 39.613716, y: -68.61456, z: -27.830538}
+  m_LocalPosition: {x: 4, y: 1, z: 18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 759870222}
