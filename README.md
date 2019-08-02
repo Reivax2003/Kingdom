@@ -1,1 +1,1 @@
-Kingdom
+Build your kingdom.
